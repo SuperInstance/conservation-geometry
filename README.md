@@ -58,6 +58,24 @@ These visualizations are the *geometric intuition layer* for the conservation ra
 - [code-conservation](https://github.com/SuperInstance/code-conservation) — Software dependency analysis
 - [flux-flow-state](https://github.com/SuperInstance/flux-flow-state) — Interactive flow visualization
 
+## Testing
+
+```bash
+pip install pytest numpy matplotlib scipy
+pytest tests/ -v
+```
+
+Tests cover:
+- Laplacian matrix construction (symmetry, row sums, PSD property)
+- Dirichlet energy (constant → zero, smooth < rough, non-negativity)
+- Alignment coefficient (bounds, conjecture C1 verification)
+- Eigenvalue shell computations
+- Phase portrait data structures
+
 ## License
 
 MIT
+
+---
+
+Part of the [OpenConstruct](https://github.com/SuperInstance) ecosystem — building tools at the intersection of mathematics, visualization, and understanding.
